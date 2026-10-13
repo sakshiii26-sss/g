@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Gym</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: #222;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #ff4500;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #ff4500;
+        }
+
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(
+                rgba(0,0,0,0.65),
+                rgba(0,0,0,0.65)
+            ), url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48")
+            center/cover;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #ff4500;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #ff4500;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #ff4500;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #222;
+            padding: 30px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 220px;
+            max-width: 320px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .card .price {
+            font-size: 25px;
+            color: #ff4500;
+            margin: 20px 0;
+        }
+
+        #contact p {
+            margin: 12px 0;
+        }
+
+        footer {
+            background: #222;
+            text-align: center;
+            padding: 20px;
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>PowerFit Gym</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#membership">Plans</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>BUILD YOUR <span>BEST SELF</span></h1>
+        <p>Train Hard. Stay Strong. Never Give Up.</p>
+        <a href="#membership" class="btn">Join Our Gym</a>
+    </div>
+
+    <section id="programs">
+        <h2>Our Programs</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Weight Training</h3>
+                <p>Build strength and muscle with effective workouts.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cardio Fitness</h3>
+                <p>Improve your stamina and keep your body active.</p>
+            </div>
+
+            <div class="card">
+                <h3>Personal Training</h3>
+                <p>Get personalized guidance to reach your fitness goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership">
+        <h2>Membership Plans</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Basic</h3>
+                <p class="price">₹999/month</p>
+                <p>Gym access</p>
+                <p>Basic equipment</p>
+            </div>
+
+            <div class="card">
+                <h3>Standard</h3>
+                <p class="price">₹1,499/month</p>
+                <p>Full gym access</p>
+                <p>Cardio and strength training</p>
+            </div>
+
+            <div class="card">
+                <h3>Premium</h3>
+                <p class="price">₹2,499/month</p>
+                <p>Full gym access</p>
+                <p>Personal training support</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: powerfit@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Your City, India</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 PowerFit Gym. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
